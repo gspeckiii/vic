@@ -1,3 +1,5 @@
 .galleryBody{
 	transform:translateY(100px);
+	margin-left:2rem;
+	margin-right:2rem;
 }

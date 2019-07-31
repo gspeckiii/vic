@@ -13,17 +13,17 @@
 
 
 <div class="navTop">
-<div class="navTop__logoDiv">
-<img class="navTop__logo"src="/images/logo.png" alt="">
-</div>
-
-<ul >
-	<li><a href="http://vic/">Home</a></li>
-	<li><a href="/gallery/create">Create Gallery</a></li>
-	<li><a href="/login">Login</a></li>
-	<li><a href="/register">Register</a></li>
-</ul>
-
+	<div class="navTop__logoDiv">
+		<img class="navTop__logo"src="/images/logo.svg" alt="">
+	</div>
+	<div class="navTop__Links">
+		<ul>
+			<li><a href="http://vic/">Home</a></li>
+			<li><a href="/gallery/create">Create Gallery</a></li>
+			<li><a href="/login">Login</a></li>
+			<li><a href="/register">Register</a></li>
+		</ul>
+	</div>
 </div>
 
 @if(Session::has('message')){{
