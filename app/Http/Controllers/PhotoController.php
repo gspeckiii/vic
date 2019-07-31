@@ -50,5 +50,11 @@ class PhotoController extends Controller
 
         //render the view
         return view('photo/details',compact('photos'));
-    }    //
+    }  
+
+    public function destroy($id,$gallery_id){
+        $photos=DB::table($this->table)->where('id',$id)->delete();
+        \Session::flash('message','Portfolio Deleted');
+        return \Redirect::route('gallery.show',array('id'=>$gallery_id));
+    }  //
 }

@@ -14,5 +14,6 @@
 
 <div class="maindiv">
 <img class="proimage" src="/images/{{$photos->image}}" alt="">
+<p><a style="text-align:center" href="/photo/destroy/{{$photos->id}}/{{$photos->gallery_id}}">Delete Portfolio</a></p>
 </div>
 @stop
