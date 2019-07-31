@@ -1,0 +1,39 @@
+.navTop{	
+		position:absolute;
+		width:100%;
+		top:0;
+		padding-left:2rem;
+		padding-top:.5rem;
+
+
+		& ul{
+			transform:translateY(-70px);
+			display:inline-block;
+
+		}
+		& li{
+			margin-left:2rem;
+			display:inline-block;
+		}
+
+		& a {
+			text-decoration:none;
+			font-family: 'Playfair Display', serif;
+		}
+		& a:hover {
+			color:black;
+		}
+
+		&__logoDiv{
+			display:inline-block;
+		}
+
+
+		&__logo {
+			width:150px;
+			height:auto;
+			
+
+		}
+
+}

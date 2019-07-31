@@ -1,13 +1,58 @@
-.mynav{margin:0;padding:0;list-style:none;text-align:center;
-	background:#fff none repeat scroll 0 0;
-	margin-top:10px;}
-.mynav li{display:block;}
-.mynav li a{display:block;background:#999;padding:5px;margin-bottom:5px;color:#fff;}
-.mynav li a:hover{background-color:#444;}
-.menutitle{	display:block;color:#000;border: 2px solid #000;text-align:center;}
-.maindiv{
-	padding:20px;
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	color:#333;
+	margin:0;
 }
-.proimage{
-	display:block;width:60%;margin:auto;padding:10px;background:white;
+h1,h2,h3,h4,h5{
+font-family: 'Playfair Display', serif;
 }
+img{
+	max-width: 100%;
+	height:auto;
+}
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+a{
+	color:#bf35aa;
+}
+.galleryBody{
+	-webkit-transform:translateY(100px);
+	        transform:translateY(100px);
+}
+.navTop{	
+		position:absolute;
+		width:100%;
+		top:0;
+		padding-left:2rem;
+		padding-top:.5rem;
+
+}
+.navTop ul{
+			-webkit-transform:translateY(-70px);
+			        transform:translateY(-70px);
+			display:inline-block;
+
+		}
+.navTop li{
+			margin-left:2rem;
+			display:inline-block;
+		}
+.navTop a {
+			text-decoration:none;
+			font-family: 'Playfair Display', serif;
+		}
+.navTop a:hover {
+			color:black;
+		}
+.navTop__logoDiv{
+			display:inline-block;
+		}
+.navTop__logo {
+			width:150px;
+			height:auto;
+			
+
+		}

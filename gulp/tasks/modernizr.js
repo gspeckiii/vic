@@ -8,5 +8,5 @@ gulp.task('modernizr',function(){
 			"setClasses"
 		]
 	}))
-	.pipe(gulp.dest('./public/compile/script'));
+	.pipe(gulp.dest('./public/compile/scripts'));
 })
