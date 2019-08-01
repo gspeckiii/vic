@@ -1,17 +1,11 @@
 @extends('layouts/main')
 @section('content')
 
-<div class="callout primary">
-<article class="grid-container">
-<div class="">
+
+<div class="galleryBody">
 <h1>Vessels In Clay Gallery</h1>
 <p class="lead"><b>Create</b> your own online <b>ceramic </b>gallery and start uploading your <b> work.</b> </p>
-</div>
-</article>
-</div>
 
-<div class="">
-<div class="maindiv">
 
 {!! Form::open(array('action' => 'GalleryController@store','enctype' => 'multipart/form-data'))!!}
 
@@ -27,6 +21,6 @@
 
 
 {!! Form::close()!!}
-</div>
+
 </div>
 @stop

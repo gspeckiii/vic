@@ -15,6 +15,9 @@ class GalleryController extends Controller
         return view('gallery/index',compact('gallery'));
     }
     public function create(){
+        if (!Auth::check()) {
+                 return \Redirect::route('gallery.index');   # code...
+        }
  		return view('gallery/create');
     }
     public function store(Request $request){

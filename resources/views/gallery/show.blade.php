@@ -1,18 +1,13 @@
 @extends('layouts/main')
 @section('content')
-<div class="callout primary">
-<article class="grid-container">
-<div class="">
+
+<div class="galleryBody">
 	<p><a href="/">Back to Portfolio</a></p>
 <h1>{{$gallery->name}}</h1>
 <p class="lead">{{$gallery->description}} </p>
+<?php if (Auth::check()): ?>
 <a href="/photo/create/{{$gallery->id}}">Upload Portfolio</a>
-</div>
-</article>
-</div>
-<article class="grid-container">
-<div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-4">
-
+<?php endif; ?>
 	<?php foreach ($photos as $photo):{
 		# code...
 	} ?>
