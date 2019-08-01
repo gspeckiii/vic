@@ -12,9 +12,9 @@
 <body>
 
 
-<div class="navTop">
-	<div class="navTop__logoDiv">
-		<img class="navTop__logo"src="/images/logo.svg" alt="">
+<nav class="navTop">
+	<div class="navTop__logo">
+		<img class="navTop__logoImg" src="/images/logo.svg" alt="">
 	</div>
 	<div class="navTop__Links">
 		<ul>
@@ -27,12 +27,13 @@
 			 <?php if (!Auth::check()): ?>
 			 	<li><a href="/login">Login</a></li>
 				<li><a href="/register">Register</a></li>	
-			 <?php endif ?>
-
-			
-		</ul>
+			 <?php endif ?>			
+		</ul>	
 	</div>
-</div>
+	
+</nav>
+
+
 
 @if(Session::has('message')){{
 	Session::get('message')

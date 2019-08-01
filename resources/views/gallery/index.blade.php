@@ -1,9 +1,13 @@
 @extends('layouts/main')
 @section('content')
 
-<div class="galleryBody">
-<h1>Vessels In Clay Gallery</h1>
-<p class=""><b>Create</b> your own online <b>ceramic </b>gallery and start uploading your <b> work.</b> </p>
+<div class="wrapper">
+<h1>Connect to the past</h1>
+<h2>Give our future a cup to drink from</h2>
+<h3>collect in thy Clay today...</h3>
+<h4>Modern Artifacts</h4>
+<h5>Become a Vessel in Clay Patron today</h5>
+<p class="">Create your own online ceramic collection page and show the world all the beautiful ceramic artifacts you own</p>
 
 
 

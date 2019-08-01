@@ -16,7 +16,16 @@ img{
 	        box-sizing: border-box;
 }
 a{
-	color:#bf35aa;
+	color:#cd8384;
+}
+.wrapper{
+	position:relative;
+	clear:both;
+	padding-left: 18px;
+	padding-right: 18px;
+	padding-top:67%;
+
+
 }
 .galleryBody{
 	-webkit-transform:translateY(100px);
@@ -25,39 +34,62 @@ a{
 	margin-right:2rem;
 }
 .navTop{	
-		position:absolute;
+		position:relative;
 		width:100%;
-		top:0;
-		padding-left:2rem;
-		padding-top:.5rem;
-		height:20px;
+	
+
 		z-index:0;
 
 }
-.navTop__logoDiv{
-			display:inline-block;
-			width:15%;
-		}
 .navTop__logo {
-			width:100px;
-						
+			position:absolute;
+		}
+.navTop__logoImg {	
+			width:100%;
+			
 		}
 .navTop__Links{
-			float:right;
-			width:85%;
+			overflow:hidden;
+			border-bottom-width:1px;
+			border-bottom-color:black;	
+			padding-right:36px;	
+			padding-top:10px;
+		
 		}
-.navTop__Links ul{	
-				display:inline-block;
-				text-align:right;
-				z-index:10;
+.navTop__Links ul {	
+			    display: -webkit-box;	
+			    display: -ms-flexbox;	
+			    display: flex;
+			    -webkit-box-align: stretch;
+			        -ms-flex-align: stretch;
+			            align-items: stretch; /* Default */
+			    -webkit-box-pack: justify;
+			        -ms-flex-pack: justify;
+			            justify-content: space-between;
+			    width: 100%;
+			    		
 			}
 .navTop__Links li{
-				margin-left:2rem;
 				display:inline-block;
+				text-align:center;
+				padding-left:;
 			}
 .navTop__Links a {
-				text-decoration:none;
+				margin:2px;
+				padding:2px;
+				text-decoration: none;
+				border-radius: 10px;
+			    border-top: 3px solid #800102; /* Or whatever color you want */
+			    border-bottom: 2px solid black;
+			    border-left: 1px dotted #cd8384;
+			    border-right: 1px dotted #cd8384;
+
+
 				font-family: 'Playfair Display', serif;
+				z-index:11;
+				text-align:center;
+
+		
 			}
 .navTop__Links a:hover {
 				color:black;

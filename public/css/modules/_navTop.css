@@ -1,39 +1,57 @@
 .navTop{	
-		position:absolute;
+		position:relative;
 		width:100%;
-		top:0;
-		padding-left:2rem;
-		padding-top:.5rem;
-		height:20px;
+	
+
 		z-index:0;
 		
-		&__logoDiv{
-			display:inline-block;
-			width:15%;
-		}
+
 		&__logo {
-			width:100px;
-						
+			position:absolute;
+		}
+		&__logoImg {	
+			width:100%;
+			
 		}
 		&__Links{
-			float:right;
-			width:85%;
-			& ul{	
-				display:inline-block;
-				text-align:right;
-				z-index:10;
+			overflow:hidden;
+			border-bottom-width:1px;
+			border-bottom-color:black;	
+			padding-right:36px;	
+			padding-top:10px;
+			& ul {	
+			    display: flex;
+			    align-items: stretch; /* Default */
+			    justify-content: space-between;
+			    width: 100%;
+			    		
 			}
 			& li{
-				margin-left:2rem;
 				display:inline-block;
+				text-align:center;
+				padding-left:;
 			}
 			& a {
-				text-decoration:none;
+				margin:2px;
+				padding:2px;
+				text-decoration: none;
+				border-radius: 10px;
+			    border-top: 3px solid $mainRedDk; /* Or whatever color you want */
+			    border-bottom: 2px solid black;
+			    border-left: 1px dotted $mainRed;
+			    border-right: 1px dotted $mainRed;
+
+
 				font-family: 'Playfair Display', serif;
+				z-index:11;
+				text-align:center;
+
+		
 			}
 			& a:hover {
 				color:black;
 			}
+		
 		}
 
 }
