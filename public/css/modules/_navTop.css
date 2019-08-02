@@ -1,57 +1,105 @@
 .navTop{	
-		position:relative;
+		position:absolute;
 		width:100%;
-	
-
-		z-index:0;
-		
-
-		&__logo {
-			position:absolute;
-		}
-		&__logoImg {	
-			width:100%;
-			
-		}
+		z-index:1;
+		margin-left:3px;
+		@mixin at10 {visibility:hidden;}		
+		&__logo {position:absolute;top:0;}
+		&__logoImg {width:100%;}
 		&__Links{
+			position:absolute;
+			top:0;
+			width:100%;
 			overflow:hidden;
-			border-bottom-width:1px;
-			border-bottom-color:black;	
-			padding-right:36px;	
-			padding-top:10px;
-			& ul {	
-			    display: flex;
+				display: flex;
 			    align-items: stretch; /* Default */
 			    justify-content: space-between;
-			    width: 100%;
-			    		
-			}
+			    @mixin at00 { top:15px;}
+			    @mixin at0 { top:20px;}
+				@mixin at1 {top:25px;}
+				@mixin at2 {top:30px;}
+				@mixin at3 {top:35px;}
+				@mixin at4 {top:40px;}
+				@mixin at5 {top:45px;}
+				@mixin at6 {top:50px;}
+				@mixin at7 {top:55px;}
+				@mixin at8 {top:60px;}
+				@mixin at9 {top:65px;}
+				
+
 			& li{
 				display:inline-block;
 				text-align:center;
-				padding-left:;
+				z-index:2;
 			}
 			& a {
-				margin:2px;
-				padding:2px;
-				text-decoration: none;
-				border-radius: 10px;
-			    border-top: 3px solid $mainRedDk; /* Or whatever color you want */
-			    border-bottom: 2px solid black;
-			    border-left: 1px dotted $mainRed;
-			    border-right: 1px dotted $mainRed;
-
-
+				color:$mainRed;
 				font-family: 'Playfair Display', serif;
-				z-index:11;
-				text-align:center;
-
-		
+				z-index:3;
+				text-decoration: none;
+				@mixin at00 {font-size:1rem;}
+				@mixin at0 {font-size:1rem;}
+				@mixin at1 {font-size:1.25rem;}
+				@mixin at2 {font-size:1.5rem;}
+				@mixin at3 {font-size:1.75rem;}
+				@mixin at4 {font-size:2rem;}
+				@mixin at5 {font-size:1.75rem;}
+				@mixin at6 {font-size:2rem;}																	
 			}
 			& a:hover {
 				color:black;
-			}
-		
+			}		
 		}
+		&__Glyphs{
+			position:absolute;
+			width:100%;
+			z-index:11;
+			overflow:hidden;
+			display: flex;
+			 align-items: stretch; /* Default */
+			 justify-content: space-between;
+			 bottom:25px;
+			 height:15px;
+			 
+			 	@mixin at00 {min-height:40px;bottom:15px;}
+				@mixin at0 {min-height:55px;bottom:15px;}
+				@mixin at1 {min-height:60px;bottom:20px;}
+				@mixin at2 {min-height:65px;bottom:20px;}
+				@mixin at3 {min-height:70px;bottom:25px;}
+				@mixin at4 {min-height:75px;bottom:25px;}
+				@mixin at5 {min-height:80px;bottom:30px;}
+				@mixin at6 {min-height:85px;bottom:30px;}
+				@mixin at7 {min-height:90px;bottom:35px;}
+				@mixin at8 {min-height:95px;bottom:35px;}
+				@mixin at9 {min-height:100px;bottom:40px;}		 
+			&__svg{height:100%;}
+			&__svg--lg{height:50px;}			
 
+		}
 }
+/*
+				text-decoration: none;
+				border-radius: 10px;
+			    border-top: 3px solid $mainRedDk;  Or whatever color you want 
+			    border-bottom: 2px solid black;
+			    border-left: 1px dotted $mainRed;
+			    border-right: 1px dotted $mainRed;
+*/
+/*
+ 				@mixin at00 {}
+				@mixin at0 {}
+				@mixin at1 {}
+				@mixin at2 {}
+				@mixin at3 {}
+				@mixin at4 {}
+				@mixin at5 {}
+				@mixin at6 {}
+				@mixin at7 {}
+				@mixin at8 {}
+				@mixin at9 {}
+				@mixin at10 {}																	
+
+
+
+
+ */
