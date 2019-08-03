@@ -53,27 +53,52 @@
 		&__Glyphs{
 			position:absolute;
 			width:100%;
-			z-index:11;
+			z-index:13;
 			overflow:hidden;
 			display: flex;
 			 align-items: stretch; /* Default */
 			 justify-content: space-between;
 			 bottom:25px;
-			 height:15px;
 			 
-			 	@mixin at00 {min-height:40px;bottom:15px;}
-				@mixin at0 {min-height:55px;bottom:15px;}
-				@mixin at1 {min-height:60px;bottom:20px;}
-				@mixin at2 {min-height:65px;bottom:20px;}
-				@mixin at3 {min-height:70px;bottom:25px;}
-				@mixin at4 {min-height:75px;bottom:25px;}
-				@mixin at5 {min-height:80px;bottom:30px;}
-				@mixin at6 {min-height:85px;bottom:30px;}
-				@mixin at7 {min-height:90px;bottom:35px;}
-				@mixin at8 {min-height:95px;bottom:35px;}
-				@mixin at9 {min-height:100px;bottom:40px;}		 
-			&__svg{height:100%;}
-			&__svg--lg{height:50px;}			
+			 
+			 	@mixin at00 {bottom:15px;}
+				@mixin at0 {bottom:15px;}
+				@mixin at1 {bottom:20px;}
+				@mixin at2 {bottom:20px;}
+				@mixin at3 {bottom:25px;}
+				@mixin at4 {bottom:25px;}
+				@mixin at5 {bottom:30px;}
+				@mixin at6 {bottom:30px;}
+				@mixin at7 {bottom:35px;}
+				@mixin at8 {bottom:35px;}
+				@mixin at9 {bottom:40px;}		 
+			&__svg{
+			 	@mixin at00 {height:40px;}
+				@mixin at0 {height:55px;}
+				@mixin at1 {height:60px;}
+				@mixin at2 {height:65px;}
+				@mixin at3 {height:70px;}
+				@mixin at4 {height:75px;}
+				@mixin at5 {height:80px;}
+				@mixin at6 {height:85px;}
+				@mixin at7 {height:90px;}
+				@mixin at8 {height:95px;}
+				@mixin at9 {height:100px;}
+			}
+			&__svg--lg{
+				z-index:15;
+				@mixin at00 {height:50px;transform:translateY(5px);}
+				@mixin at0 {height:85px;transform:translateY(10px);}
+				@mixin at1 {height:95px;}
+				@mixin at2 {height:100px;}
+				@mixin at3 {height:105px;}
+				@mixin at4 {height:110px;}
+				@mixin at5 {height:115px;}
+				@mixin at6 {height:120px;}
+				@mixin at7 {height:170px;}
+				@mixin at8 {height:200px;}
+				@mixin at9 {height:250px;}
+			}			
 
 		}
 }
